@@ -17,7 +17,3 @@ jobs:
         run: cd chiao_test; dotnet restore; dotnet build --configuration Release --no-restore; dotnet pack -p:PackageVersion=${{ env.CI_COMMIT_TAG }}
       - name: push-nupkg
         run: dotnet nuget push chiao_test/bin/Debug/chiao_test.${{ env.CI_COMMIT_TAG }}.nupkg -k ${{ env.API_KEY }} -s https://api.nuget.org/v3/index.json
-        uses: brandedoutcast/publish-nuget@v2.5.2
-        with:
-            PROJECT_FILE_PATH: chiao_test/chiao_test.csproj
-            NUGET_KEY: 
