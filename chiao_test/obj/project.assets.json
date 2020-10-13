@@ -183,7 +183,7 @@
     "/home/chiao/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/chiao_test.csproj",
       "projectName": "chiao_test",

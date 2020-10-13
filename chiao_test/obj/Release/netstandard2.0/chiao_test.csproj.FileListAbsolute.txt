@@ -1,0 +1,9 @@
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/bin/Release/netstandard2.0/chiao_test.deps.json
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/bin/Release/netstandard2.0/chiao_test.dll
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/bin/Release/netstandard2.0/chiao_test.pdb
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/obj/Release/netstandard2.0/chiao_test.csprojAssemblyReference.cache
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/obj/Release/netstandard2.0/chiao_test.AssemblyInfoInputs.cache
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/obj/Release/netstandard2.0/chiao_test.AssemblyInfo.cs
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/obj/Release/netstandard2.0/chiao_test.csproj.CoreCompileInputs.cache
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/obj/Release/netstandard2.0/chiao_test.dll
+/mnt/c/Chiao/Source/shioaji-dotnet/chiao_test/obj/Release/netstandard2.0/chiao_test.pdb
