@@ -2,8 +2,6 @@ name: Publish Packages
 
 on: 
   push:
-    branches: 
-      - master
     tags:
       - "*"
 jobs:
@@ -21,6 +19,6 @@ jobs:
         NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
     - run: dotnet build chiao_test
     - name: Create the package
-      run: dotnet pack --configuration Release chiao_test -p:PackageVersion=1.0.4 -o .
+      run: dotnet pack --configuration Release chiao_test -p:PackageVersion=${GITHUB_REF#refs/*/} -o .
     - name: Publish the package to GPR
       run: dotnet nuget push *.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
