@@ -7,26 +7,20 @@ on:
     tags:
       - "*"
 jobs:
-  publish:
-    name: build, pack & publish
+  build:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./chiao_test/
+    name: Dotnet Side by Side testing sample
     steps:
-      - uses: actions/checkout@v2
-
-      # - name: Setup dotnet
-      #   uses: actions/setup-dotnet@v1
-      #   with:
-      #     dotnet-version: 3.1.200
-      - name: Install dependencies
-        run: dotnet restore
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
-      - name: Publish to NuGet
-        uses: brandedoutcast/publish-nuget@v2
-        with:
-          PROJECT_FILE_PATH: chiao_test/chiao_test.csproj
-          VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
-          TAG_FORMAT: '*'
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - uses: actions/checkout@v2
+    # Authenticates packages to push to GPR
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use.
+        source-url: https://nuget.pkg.github.com/luckchiao/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
+    - run: dotnet build chiao_test
+    - name: Create the package
+      run: dotnet pack --configuration Release chiao_test -p:PackageVersion=1.0.4 -o .
+    - name: Publish the package to GPR
+      run: dotnet nuget push *.nupkg
