@@ -22,3 +22,7 @@ jobs:
       - name: publish on version change
         run: |
           dotnet build -c Release chiao_test/chiao_test.csproj
+          dotnet pack  --no-build -c Release chiao_test/chiao_test.csproj -p:PackageVersion=1.0.3 -o .
+          dotnet nuget push *.nupkg -k $(API_KEY) -s https://api.nuget.org/v3/index.json
+          
+          
