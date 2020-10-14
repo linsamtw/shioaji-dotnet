@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab96e7c-65fc-4dd7-820f-b2713dab8522" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/chiao_test/obj/Debug/netstandard2.0/chiao_test.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/chiao_test/obj/Debug/netstandard2.0/chiao_test.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.shioaji-dotnet.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shioaji-dotnet.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,7 +32,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602574108733</updated>
-      <workItem from="1602574111200" duration="1635000" />
+      <workItem from="1602574111200" duration="4533000" />
     </task>
     <servers />
   </component>
@@ -42,5 +43,15 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="630" y="338" key="LayersDialog" timestamp="1602635719770">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="630" y="338" key="LayersDialog/0.0.1920.1034/-1920.0.1920.1040@0.0.1920.1034" timestamp="1602635719770" />
+    <state x="381" y="75" key="SettingsEditor" timestamp="1602635807331">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="381" y="75" key="SettingsEditor/0.0.1920.1034/-1920.0.1920.1040@0.0.1920.1034" timestamp="1602635807331" />
   </component>
 </project>
