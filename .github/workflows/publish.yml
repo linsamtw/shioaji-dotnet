@@ -10,6 +10,8 @@ jobs:
   publish:
     name: build, pack & publish
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./chiao_test/
     steps:
       - uses: actions/checkout@v2
 
