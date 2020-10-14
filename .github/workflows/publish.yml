@@ -2,6 +2,8 @@ name: Publish Packages
 
 on: 
   push:
+    branches: 
+      - master
     tags:
       - "*"
 
@@ -15,11 +17,6 @@ jobs:
           echo ::set-env name=CI_COMMIT_TAG::${GITHUB_REF#refs/*/}
           echo ::set-env name=API_KEY::${{secrets.NUGET_API_KEY}}
       - uses: actions/checkout@v2
-
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 1.0.3
 
       # Publish
       - name: publish on version change
